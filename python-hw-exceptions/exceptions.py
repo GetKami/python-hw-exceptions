@@ -20,5 +20,6 @@ def polish_notation(calculation):
             print("Недоступное арифметическое действие")
     except IndexError:
         print("Не хватает данных")
-        
+    except AssertionError:
+        print("Вы ввели отрицательное значение")
 polish_notation(calculation)
